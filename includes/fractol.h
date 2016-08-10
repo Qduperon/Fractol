@@ -6,7 +6,7 @@
 /*   By: qduperon <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/08/03 18:30:39 by qduperon          #+#    #+#             */
-/*   Updated: 2016/08/10 19:43:13 by qduperon         ###   ########.fr       */
+/*   Updated: 2016/08/10 19:46:13 by qduperon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,8 +34,8 @@ typedef struct	s_env
 	void		*win;
 }				t_env;
 
-int		ft_check_param(int ac, char **av);
-int		ft_exit(void);
-t_env	ft_init_env(int ac, char **av);
+int				ft_check_param(int ac, char **av);
+int				ft_exit(void);
+t_env			ft_init_env(int ac, char **av);
 
 #endif
