@@ -6,7 +6,7 @@
 /*   By: qduperon <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/08/08 16:53:09 by qduperon          #+#    #+#             */
-/*   Updated: 2016/08/10 19:43:18 by qduperon         ###   ########.fr       */
+/*   Updated: 2016/08/17 17:41:55 by qduperon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,7 @@ int		ft_exit(void)
 	ft_putstr("Available fractals :\n");
 	ft_putendl("-Julia");
 	ft_putendl("-Mandelbrot");
+	ft_putendl("-Mandelbar");
 	exit(0);
 }
 
@@ -27,6 +28,8 @@ int		ft_check_param(int ac, char **av)
 		return (1);
 	else if (ac == 2 && ft_strstr(av[1], "Mandelbrot") != 0)
 		return (2);
+	else if (ac == 2 && ft_strstr(av[1], "Mandelbar") != 0)
+		return (3);
 	else
 		return (ft_exit());
 }

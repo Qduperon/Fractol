@@ -6,7 +6,7 @@
 /*   By: qduperon <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/08/10 19:30:27 by qduperon          #+#    #+#             */
-/*   Updated: 2016/08/16 19:56:48 by qduperon         ###   ########.fr       */
+/*   Updated: 2016/08/17 17:31:47 by qduperon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,11 +52,11 @@ t_env			ft_init_env(int ac, char **av)
 	t_env	env;
 
 	ft_init_fract(&env);
-	env->zx = ((env->mod.xmax - env->mod.xmin) / (W - 1));
-	env->zy = ((env->mod.ymax - env->mod.ymin) / (H - 1));
+	env.zx = ((env.mod.xmax - env.mod.xmin) / (W - 1));
+	env.zy = ((env.mod.ymax - env.mod.ymin) / (H - 1));
 	env.type = ft_check_param(ac, av);
 	env.display = 1;
-	env.values = 0;
+	env.value = 0;
 	env.iter = 16;
 	env.freq = 0.1;
 	env.color = 2;
@@ -66,7 +66,7 @@ t_env			ft_init_env(int ac, char **av)
 	env.mlx = mlx_init();
 	env.win = mlx_new_window(env.mlx, W, H, "Fractol");
 	env.img.ptr = mlx_new_image(env.mlx, env.img.width, env.img.height);
-	env.img.img = mlx_get_addr(env.img.ptr, &env.img.bpp, \
+	env.img.img = mlx_get_data_addr(env.img.ptr, &env.img.bpp, \
 			&env.img.ls, &env.img.endian);
 	return (env);
 }
