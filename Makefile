@@ -6,7 +6,7 @@
 #    By: qduperon <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/06/16 13:22:36 by qduperon          #+#    #+#              #
-#    Updated: 2016/08/17 15:59:57 by qduperon         ###   ########.fr        #
+#    Updated: 2016/08/17 18:15:57 by qduperon         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -23,6 +23,7 @@ NAME = fractol
 SRCS = srcs/draw.c \
 	   srcs/env.c \
 	   srcs/fractal.c \
+	   srcs/hook.c \
 	   srcs/main.c \
 	   srcs/pixel.c \
 	   srcs/tools.c \

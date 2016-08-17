@@ -6,7 +6,7 @@
 /*   By: qduperon <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/08/17 15:30:33 by qduperon          #+#    #+#             */
-/*   Updated: 2016/08/17 17:40:45 by qduperon         ###   ########.fr       */
+/*   Updated: 2016/08/17 19:41:24 by qduperon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,7 +61,7 @@ int		ft_mandelbar(t_env env, int x, int y)
 
 int		ft_mandelbrot(t_env env, int x, int y)
 {
-	int 	i;
+	int		i;
 	double	zr;
 	double	zi;
 

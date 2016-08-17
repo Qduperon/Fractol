@@ -6,7 +6,7 @@
 /*   By: qduperon <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/08/17 15:08:31 by qduperon          #+#    #+#             */
-/*   Updated: 2016/08/17 17:42:09 by qduperon         ###   ########.fr       */
+/*   Updated: 2016/08/17 19:41:46 by qduperon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ static int	ft_fractal(t_env env, int x, int y)
 	return (0);
 }
 
-int		ft_draw(t_env env)
+int			ft_draw(t_env env)
 {
 	int	color;
 	int	pixel;
