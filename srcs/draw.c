@@ -6,7 +6,7 @@
 /*   By: qduperon <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/08/17 15:08:31 by qduperon          #+#    #+#             */
-/*   Updated: 2016/08/17 19:41:46 by qduperon         ###   ########.fr       */
+/*   Updated: 2016/08/23 15:32:58 by qduperon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,6 +44,6 @@ int			ft_draw(t_env env)
 		y++;
 	}
 	mlx_put_image_to_window(env.mlx, env.win, env.img.ptr, 0, 0);
-	//ft_display(env);
+	ft_display(env);
 	return (0);
 }

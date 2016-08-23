@@ -6,7 +6,7 @@
 /*   By: qduperon <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/08/03 18:30:39 by qduperon          #+#    #+#             */
-/*   Updated: 2016/08/18 15:47:43 by qduperon         ###   ########.fr       */
+/*   Updated: 2016/08/23 15:34:06 by qduperon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -102,6 +102,7 @@ int				ft_mandelbrot(t_env env, int x, int y);
 int				ft_mousehook(int button, int x, int y, t_env *env);
 t_env			*ft_reset(t_env *env);
 t_env			ft_init_env(int ac, char **av);
+void			ft_display(t_env env);
 void			ft_pixel_put(t_env env, int x, int y, int color);
 
 #endif

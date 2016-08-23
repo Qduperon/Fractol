@@ -6,7 +6,7 @@
 /*   By: qduperon <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/08/18 16:11:06 by qduperon          #+#    #+#             */
-/*   Updated: 2016/08/18 16:13:21 by qduperon         ###   ########.fr       */
+/*   Updated: 2016/08/23 15:33:23 by qduperon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ int		main(int ac, char **av)
 
 	env = ft_init_env(ac, av);
 	ft_draw(env);
-	//ft_display(env);
+	ft_display(env);
 	mlx_hook(env.win, 2, 2, ft_keyhook, &env);
 	mlx_mouse_hook(env.win, ft_mousehook, &env);
 	mlx_hook(env.win, 6, (1L << 0), ft_juliahook, &env);
