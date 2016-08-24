@@ -6,7 +6,7 @@
 /*   By: qduperon <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/08/08 16:53:09 by qduperon          #+#    #+#             */
-/*   Updated: 2016/08/23 16:03:07 by qduperon         ###   ########.fr       */
+/*   Updated: 2016/08/23 16:25:09 by qduperon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -66,9 +66,9 @@ void		ft_display(t_env env)
 				"Controls Mouse");
 		mlx_string_put(env.mlx, env.win, W - 275, 22, 0xFFFFF,\
 				"Zoom/dezoom = Scroll/click");
-		mlx_string_put(env.mlx, env.win, W - 225, H - 100,\
+		mlx_string_put(env.mlx, env.win, W - 175, H - 50,\
 				0xFFFF00, "Fractal Name :");
-		mlx_string_put(env.mlx, env.win, W - 200, H - 83,\
+		mlx_string_put(env.mlx, env.win, W - 150, H - 33,\
 				0xFFFFF, ft_name(env));
 	}
 }
