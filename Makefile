@@ -6,7 +6,7 @@
 #    By: qduperon <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/06/16 13:22:36 by qduperon          #+#    #+#              #
-#    Updated: 2016/08/18 15:49:46 by qduperon         ###   ########.fr        #
+#    Updated: 2016/10/04 15:44:15 by qduperon         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -36,17 +36,23 @@ SRCS = srcs/draw.c \
 FLAGS = -Wall -Werror -Wextra
 
 #==============================================================================#
+#                             // OBJECTS  \\                                   #
+#==============================================================================#
+
+OBJ = $(SRCS:.c=.o)
+
+#==============================================================================#
 #                            // COMPILATION \\                                 #
 #==============================================================================#
 
 all: $(NAME)
 
-$(NAME):
+$(NAME): $(OBJ)
 	@echo "Begin Fractol..."
-	make -C libft/ re
-	make -C minilibx_macos/ re
-	gcc -o $(NAME) $(FLAGS) $(SRCS) -lmlx -framework OpenGL -framework AppKit \
-	   	-I./includes -lft -L./libft
+	make -C libft
+	make -C minilibx_macos
+	gcc -o $(NAME) $(FLAGS) $(OBJ) -lmlx -framework OpenGL -framework AppKit \
+	   	-I./includes -lft -L./libft -I./minilibx_macos
 	@echo "Fractol Done"
 
 #==============================================================================#
@@ -55,8 +61,9 @@ $(NAME):
 
 clean:
 	make clean -C libft
+	rm -f $(OBJ)
 
-fclean:
+fclean: clean
 	make fclean -C libft
 	make clean -C minilibx_macos
 	rm -f $(NAME)

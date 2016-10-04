@@ -6,11 +6,11 @@
 /*   By: qduperon <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/08/17 15:30:33 by qduperon          #+#    #+#             */
-/*   Updated: 2016/08/17 19:41:24 by qduperon         ###   ########.fr       */
+/*   Updated: 2016/10/04 15:41:52 by qduperon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "fractol.h"
+#include "../includes/fractol.h"
 
 int		ft_julia(t_env env, int x, int y)
 {

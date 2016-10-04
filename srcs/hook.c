@@ -6,11 +6,11 @@
 /*   By: qduperon <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/08/17 17:57:10 by qduperon          #+#    #+#             */
-/*   Updated: 2016/08/22 18:57:41 by qduperon         ###   ########.fr       */
+/*   Updated: 2016/10/04 15:42:07 by qduperon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "fractol.h"
+#include "../includes/fractol.h"
 
 static void		ft_arrow_key(t_env *env, int keycode)
 {

@@ -6,11 +6,11 @@
 /*   By: qduperon <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/08/18 15:46:07 by qduperon          #+#    #+#             */
-/*   Updated: 2016/08/22 16:09:25 by qduperon         ###   ########.fr       */
+/*   Updated: 2016/10/04 15:42:34 by qduperon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "fractol.h"
+#include "../includes/fractol.h"
 
 static void		ft_init_mouse(t_env *env, double dcr, double dci)
 {

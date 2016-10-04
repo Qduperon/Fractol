@@ -6,11 +6,11 @@
 /*   By: qduperon <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/08/17 15:08:31 by qduperon          #+#    #+#             */
-/*   Updated: 2016/08/23 15:32:58 by qduperon         ###   ########.fr       */
+/*   Updated: 2016/10/04 15:41:16 by qduperon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "fractol.h"
+#include "../includes/fractol.h"
 
 static int	ft_fractal(t_env env, int x, int y)
 {

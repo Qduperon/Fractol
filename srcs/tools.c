@@ -6,11 +6,11 @@
 /*   By: qduperon <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/08/08 16:53:09 by qduperon          #+#    #+#             */
-/*   Updated: 2016/08/23 16:25:09 by qduperon         ###   ########.fr       */
+/*   Updated: 2016/10/04 15:42:59 by qduperon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "fractol.h"
+#include "../includes/fractol.h"
 
 int			ft_exit(void)
 {

@@ -6,11 +6,11 @@
 /*   By: qduperon <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/08/17 15:50:50 by qduperon          #+#    #+#             */
-/*   Updated: 2016/08/17 15:59:33 by qduperon         ###   ########.fr       */
+/*   Updated: 2016/10/04 15:42:46 by qduperon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "fractol.h"
+#include "../includes/fractol.h"
 
 void	ft_pixel_put(t_env env, int x, int y, int color)
 {

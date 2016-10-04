@@ -6,11 +6,11 @@
 /*   By: qduperon <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/08/10 19:30:27 by qduperon          #+#    #+#             */
-/*   Updated: 2016/08/17 17:31:47 by qduperon         ###   ########.fr       */
+/*   Updated: 2016/10/04 15:41:34 by qduperon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "fractol.h"
+#include "../includes/fractol.h"
 
 t_env			*ft_reset(t_env *env)
 {
